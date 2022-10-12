@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="css/jquery.emojipicker.css">
+    <!-- Apple Emoji -->
+<link rel="stylesheet" href="css/jquery.emojipicker.a.css">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="bg-container">
+        <div class="green-bg"></div>
+        <div class="grey-bg"></div>
+      </div>
+      <div class="inner-container" id="inner_container">
+        <div class="left-container" id="left_container">
+          <div class="left-container-navbar">
+            <img src="https://www.finetoshine.com/wp-content/uploads/Beautiful-Girl-Selfie-Images-2-683x1024.jpg" id="user_icon">
+            <span class="material-icons" id="new-chat-icon"> chat </span>
+            <span class="material-icons" id="more-icon"> more_vert </span>
+          </div>
+          <div class="search-container">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search.." name="search" />
+          </div>
+          <div id="chat_container">
+            <!-- <div class="chat-1 chat_list">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg"
+              />
+              <div class="chat_ib">
+                <h5>Mansheen Kaur</h5>
+                <p>How are you?</p>
+              </div>
+            </div>
+            <div class="chat-1 chat_list">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg"
+              />
+              <div class="chat_ib">
+                <h5>Mansheen Kaur</h5>
+                <p>How are you?</p>
+              </div>
+            </div>
+            <div class="chat-1 chat_list">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg"
+              />
+              <div class="chat_ib">
+                <h5>Mansheen Kaur</h5>
+                <p>How are you?</p>
+              </div>
+            </div>
+            <div class="chat-1 chat_list">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg"
+              />
+              <div class="chat_ib">
+                <h5>Mansheen Kaur</h5>
+                <p>How are you?</p>
+              </div>
+            </div>
+            <div class="chat-1 chat_list">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg"
+              />
+              <div class="chat_ib">
+                <h5>Mansheen Kaur</h5>
+                <p>How are you?</p>
+              </div>
+            </div>
+            <div class="chat-1 chat_list">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg"
+              />
+              <div class="chat_ib">
+                <h5>Mansheen Kaur</h5>
+                <p>How are you?</p>
+              </div>
+            </div>
+            <div class="chat-1 chat_list">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg"
+              />
+              <div class="chat_ib">
+                <h5>Mansheen Kaur</h5>
+                <p>How are you?</p>
+              </div>
+            </div>
+            <div class="chat-1 chat_list">
+              <img
+                src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg"
+              />
+              <div class="chat_ib">
+                <h5>Mansheen Kaur</h5>
+                <p>How are you?</p>
+              </div>
+            </div>
+          </div> -->
+        </div> 
+      </div>
+      <div class="profile_page" id="profile_page" hidden>
+        <div class="profile">
+          <span class="material-symbols-outlined" id="arrow_icon">
+            arrow_back
+            </span>
+            <div>Profile</div>
+        </div>
+        <div class="profile_pic">
+         
+            <img src="https://www.finetoshine.com/wp-content/uploads/Beautiful-Girl-Selfie-Images-2-683x1024.jpg" class="userdp" id="user_dp">
+         
+            <!-- edit profile pic -->
+          <div class="profilee">
+             <div class="edit_profile_pic" id="edit_profile_pic">
+               <span class="material-symbols-outlined ">
+                 photo_camera
+                  </span>
+                 Edit Profile Pic
+              </div>
+          </div>
+          <!-- edit end profile pic -->
+
+          <!-- dropdown -->
+
+          <div class="dropdown">
+            <div id="myDropdown" class="dropdown-content">
+              <li id="view_photo">View Photo</li>
+              <li type='file' id="upload_photo">Upload Photo
+                <input id='fileid' type='file' style="display: none;"/>
+              </li>
+              <li id="remove_photo">Remove Photo</li>
+            </div>
+          </div>
+
+          <!-- end dropdown -->
+
+          
+
+        </div>
+
+
+
+        <div class="name_container">
+          <div class="your_name">Your name</div>
+          <div class="edit_name_container">
+            <div id="nameEditDiv">Mansheen Kaur</div>
+            <span class="material-symbols-outlined" id="name_pencil">
+              edit
+              </span>
+          </div>
+        </div>
+        <div class="static_text">This is not your username or pin. This name will be visible to your Whatsapp contacts.</div>
+        <div class="about_container">
+          <div class="your_about">About</div>
+          <div class="edit_about_container">
+            <div id="aboutEditDiv">Urgent calls only</div>
+            <span class="material-symbols-outlined" id="about_pencil">
+              edit
+              </span>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="right_container_navbar">
+          <div class="current_chat">
+            <img
+              src="https://cdn.pixabay.com/photo/2017/02/08/17/24/fantasy-2049567_960_720.jpg"
+            />
+            <div class="current_chat_person">Mansheen kaur</div>
+          </div>
+          <span class="material-symbols-outlined" id="attach_icon">
+            attach_file
+          </span>
+          <span class="material-icons" id="more-icon"> more_vert </span>
+        </div>
+        <div class="chat_area">
+          <div class="outgoing">
+            <div class="o_msg">hello</div>
+            <div class="time">11:59</div>
+          </div>
+          <div class="incoming">
+            <div class="i_msg">hi</div>
+            <div class="time">12:00</div>
+          </div>
+          <div class="outgoing">
+            <div class="o_msg">hello</div>
+            <div class="time">11:59</div>
+          </div>
+          <div class="outgoing">
+            <div class="o_msg">hello</div>
+            <div class="time">11:59</div>
+          </div>
+          <div class="incoming">
+            <div class="i_msg">hi</div>
+            <div class="time">12:00</div>
+          </div>
+          <div class="incoming">
+            <div class="i_msg">hi</div>
+            <div class="time">12:00</div>
+          </div>
+          <div class="outgoing">
+            <div class="o_msg">hello</div>
+            <div class="time">11:59</div>
+          </div>
+        </div>
+        <div class="typing_area">
+          <span class="material-symbols-outlined emoticons" id="emoticon"> mood </span>
+          <div class="typing">
+            <input type="text" placeholder="Search.." name="search" id="searchbox"/>
+          </div>
+          <span class="material-symbols-outlined speaking">
+            keyboard_voice
+            </span>
+        </div>
+      <div class="emoji_div">
+       <emoji-picker id="emoji_div" hidden></emoji-picker>
+        </div>
+      
+       
+    </div>
+    </div>
+    <div class="view_profile" id="viewprofile" style="display: none;">
+      <span class="material-symbols-outlined" id="close_icon"> 
+        close
+        </span>
+      <img src="https://www.finetoshine.com/wp-content/uploads/Beautiful-Girl-Selfie-Images-2-683x1024.jpg" id="user_dp" >
+    </div>
+    </div>
+  </body>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+<script src="js/jquery.emojipicker.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+  <script type="module" src="index.js"></script>
+  
+</html>
